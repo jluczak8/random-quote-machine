@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --bgcolor: #23272f;
+  --boxcolor: #374151;
+  --textcolor: #f3f4f6;
+}
+
+body {
+  background-color: var(--bgcolor);
+  color: var(--textcolor);
+  font-family: 'Raleway', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25vh auto 0 auto;
+  background-color: var(--bgcolor);
+  width: 750px;
+  height: 50%;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 5px 15px 30px 15px;
+  background-color: var(--boxcolor);
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+#quote-text {
+  margin: 15px 20px 7.5px 20px;
+  font-size: 25px;
+  text-align: center;
+  clear: both;
+  vertical-align: text-bottom;
+  height: 60%;
+}
+
+#quote-author {
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 15px;
+  height: 15%;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 50%;
+  margin-top: 15px;
+  bottom: 50px;
+  width: 100%;
+  height: 25%;
+}
+
+#tweet-quote {
+  color: var(--textcolor);
+  font-size: 30px;
+  width: 50px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#tweet-quote i {
+  text-align: center;
+}
+
+#new-quote {
+  background-color: var(--textcolor);
+  color: var(--boxcolor);
+  font-size: 21px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: var(--boxcolor);
+  height: 100%;
+}
+
+#made-by {
+  height: 10%;
+}
+
+@media screen and (max-width: 750px) {
+  #wrapper {
+    width: 90%;
+  }
+}
